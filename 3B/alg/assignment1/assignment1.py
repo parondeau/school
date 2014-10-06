@@ -10,31 +10,32 @@ def binaryBruteForce(n, M, W, C):
 	maxCost = 0
 	while count < 2**n:
 		binCount = [int(l) for l in bin(count)[2:]]
+		# prepend 0's to binary counter
 		while len(binCount) < n:
 			binCount.insert(0, 0)
-		# print "count = ", count, "bincount = ", binCount
+
 		curWeight = 0
 		curCost = 0
+		# iterate through binary counter adding values assigned a 1 to the variables keeping track of weight and cost
 		for index, val in enumerate(binCount):
 			if val == 1:
 				curWeight += W[index]
 				curCost += C[index]
-				# print "w, c", curWeight, curCost
+
+		# check if the new values are better than the previous max but still within constraints
 		if curCost > maxCost and curWeight <= M:
 			maxCost = curCost
 			X = binCount
-			# print "maxCost", maxCost
 		count += 1
 
-	# print 'maxCost=', maxCost
-	# print 'X=', X
+	# used to check solution with answers
 	myAns.append(''.join(map(str, X)))
 	if len(myAns) == len(ans):
-		# print "myAns=", myAns
-		# print "ans=", ans
 		for index, element in enumerate(ans):
 			if ans[index] != myAns[index]:
-				print "index", index, "does not work"
+				# TODO
+				# compare two arrays and see if the item that doesn't work is a 0
+				print "line", index, "does not work"
 				print myAns[index]
 		if myAns == ans:
 			print "it's fuckin fine"
