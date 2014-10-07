@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E4B6A8FC-0562-2E91-F180-7C980AAFF369" name="Person">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:00:29 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Surname" id="3CC9F1E0-FB22-0053-4FC2-B09B7EF7865B">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:01:47 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="Age" id="B7B95F36-8D3E-84AF-D2A9-CD5AFCD5E0BA">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:02:15 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Sex" id="5CE9748B-C60C-2CD8-DDA2-B33AEC9AC2FA">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:02:22 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Attribute>
+<Attribute name="Address" id="930D3F31-6C4F-7275-EE7D-4A42C2612616">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:02:50 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="Id" id="1FBCD2C7-4C15-D921-1CC3-FE6951F42F30">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:03:22 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6AF8BA15-7607-ABBD-C9C5-C77912C7D8D3" name="{entity} PK">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:03:29 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1FBCD2C7-4C15-D921-1CC3-FE6951F42F30</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

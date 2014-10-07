@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="47E70E7D-003D-9EDD-B231-1A859F208679" name="Student" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8E10578F-0CA1-E5BA-7C88-7DF83CA421D5" name="University" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E31CF3F2-3BB4-EAAE-EC76-E0622821C60F" name="Address" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E4B6A8FC-0562-2E91-F180-7C980AAFF369" name="Person" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9AA14D05-B796-5C31-FC6E-2B0D9A6DA7F1" name="GUUUUUD" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BB0EFD9B-34E5-0486-9A67-B8D4945E08CB" name="Home" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

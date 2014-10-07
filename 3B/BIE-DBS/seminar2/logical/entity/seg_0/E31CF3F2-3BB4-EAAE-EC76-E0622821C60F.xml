@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E31CF3F2-3BB4-EAAE-EC76-E0622821C60F" name="Address">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:03:51 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Street" id="FD77BE75-EF9A-13DC-BB06-EF6A106FB19C">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:05:04 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="HouseNumber" id="0180EAB3-FDF6-39A8-8428-012707BAEACE">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:05:12 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="PostCode" id="1B42F896-DD2F-852F-A1FD-F074D7520DFD">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:05:20 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="City" id="11A4C139-0C77-0968-70F1-CE79614DA6DD">
+<createdBy>paulrondeau</createdBy>
+<createdTime>2014-10-06 16:05:43 UTC</createdTime>
+<ownerDesignName>seminar2</ownerDesignName>
+<engineerTo>
+<item key="E7E70462-210E-6891-135A-ACA38E068230" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+</attributes>
+</Entity>
