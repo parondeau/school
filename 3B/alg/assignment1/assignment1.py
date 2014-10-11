@@ -28,25 +28,27 @@ def binaryBruteForce(n, M, W, C):
 			X = binCount
 		count += 1
 
-	# used to check solution with answers
-	myAns.append(''.join(map(str, X)))
-	if len(myAns) == len(ans):
-		for index, element in enumerate(ans):
-			if ans[index] != myAns[index]:
-				# TODO
-				# compare two arrays and see if the item that doesn't work is a 0
-				print "line", index, "does not work"
-				print myAns[index]
-		if myAns == ans:
-			print "it's fuckin fine"
+	# # used to check solution with answers
+	# myAns.append(''.join(map(str, X)))
+	# if len(myAns) == len(ans):
+	# 	for index, element in enumerate(ans):
+	# 		if ans[index] != myAns[index]:
+	# 			# TODO
+	# 			# compare two arrays and see if the item that doesn't work is a 0
+	# 			print "line", index, "does not work"
+	# 			print myAns[index]
+	# 	if myAns == ans:
+	# 		print "Everything works as expected"
 
-ans = []
-myAns = []
-for line in open('sol/knap_10.sol.dat', 'r'):
-	lineArr = line.rstrip().split(' ')
-	ans.append(''.join(lineArr[3:len(lineArr)]))
 
-for line in open('inst/knap_10.inst.dat', 'r'):
+# ans = []
+# myAns = []
+
+# for line in open('sol/knap_4.sol.dat', 'r'):
+# 	lineArr2 = line.rstrip().split(' ')
+# 	ans.append(''.join(lineArr2[3:len(lineArr2)]))
+
+for line in open('inst/knap_15.inst.dat', 'r'):
 	lineArr = line.rstrip().split(' ')
 	n = int(lineArr[1])
 	M = int(lineArr[2])
