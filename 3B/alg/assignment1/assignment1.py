@@ -27,7 +27,7 @@ def binaryBruteForce(n, M, W, C):
 			maxCost = curCost
 			X = binCount
 		count += 1
-
+	print maxCost
 	# # used to check solution with answers
 	# myAns.append(''.join(map(str, X)))
 	# if len(myAns) == len(ans):
@@ -48,7 +48,7 @@ def binaryBruteForce(n, M, W, C):
 # 	lineArr2 = line.rstrip().split(' ')
 # 	ans.append(''.join(lineArr2[3:len(lineArr2)]))
 
-for line in open('inst/knap_15.inst.dat', 'r'):
+for line in open('inst/knap_4.inst.dat', 'r'):
 	lineArr = line.rstrip().split(' ')
 	n = int(lineArr[1])
 	M = int(lineArr[2])

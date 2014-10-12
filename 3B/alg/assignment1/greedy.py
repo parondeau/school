@@ -2,18 +2,10 @@
 # coding=utf-8
 from array import array
 
-class RatioElement(object):
-	index = 0
-	ratio = 0
-	def __init__(self, index, ratio):
-		self.index = index
-		self.ratio = ratio
-
 def greedyHeuristicRemove(n, M, W, C):
 	# initialize variables
 	# use floating point array to track ratio
 	ratio = array('f')
-	backpack = []
 	greedyWeight = 0
 	greedyCost = 0
 	# calculate ratio of each element, store in array
@@ -34,7 +26,7 @@ def greedyHeuristicRemove(n, M, W, C):
 		# find new max ratio element
 		if len(ratio) > 0:
 		 	maxRatioIndex = ratio.index(max(ratio))
-
+	print greedyCost
 	# myAns.append(int(greedyCost))
 	# if len(ans) == len(myAns):
 	# 	for index, element in enumerate(ans):
@@ -47,7 +39,7 @@ def greedyHeuristicRemove(n, M, W, C):
 # 	lineArr = line.rstrip().split(' ')
 # 	ans.append(lineArr[2])
 
-for line in open('inst/knap_15.inst.dat', 'r'):
+for line in open('inst/knap_4.inst.dat', 'r'):
 	lineArr = line.rstrip().split(' ')
 	n = int(lineArr[1])
 	M = int(lineArr[2])
