@@ -27,7 +27,7 @@ def binaryBruteForce(n, M, W, C):
 			maxCost = curCost
 			X = binCount
 		count += 1
-	print maxCost
+	# print maxCost
 	# # used to check solution with answers
 	# myAns.append(''.join(map(str, X)))
 	# if len(myAns) == len(ans):

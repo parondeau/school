@@ -26,7 +26,7 @@ def greedyHeuristicRemove(n, M, W, C):
 		# find new max ratio element
 		if len(ratio) > 0:
 		 	maxRatioIndex = ratio.index(max(ratio))
-	print greedyCost
+	# print greedyCost
 	# myAns.append(int(greedyCost))
 	# if len(ans) == len(myAns):
 	# 	for index, element in enumerate(ans):
