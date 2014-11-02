@@ -37,7 +37,7 @@ totalW = 0
 totalC = 0
 bestC = 0
 
-for line in open('inst/knap_4.inst.dat', 'r'):
+for line in open('inst/knap_15.inst.dat', 'r'):
 	lineArr = line.rstrip().split(' ')
 	n = int(lineArr[1])
 	M = int(lineArr[2])
