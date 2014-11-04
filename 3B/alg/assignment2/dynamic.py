@@ -8,7 +8,7 @@ def dynamic(n, M, W, C):
 				m[i][j] = m[i-1][j]
 	print m[n][M]
 
-for line in open('inst/knap_4.inst.dat', 'r'):
+for line in open('inst/knap_40.inst.dat', 'r'):
 	lineArr = line.rstrip().split(' ')
 	n = int(lineArr[1])
 	M = int(lineArr[2])

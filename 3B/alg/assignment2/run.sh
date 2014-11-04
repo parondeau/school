@@ -20,7 +20,7 @@
 for Y in {1..15}
 do
 	START=$(gdate +%s%3N)
-	python fptas.py > fptas.txt
+	python fptas.py
 	FINISH=$(gdate +%s%3N)
 	# echo Time in ms to complete 50 instances: $((FINISH - START))
 	echo $((FINISH - START))
