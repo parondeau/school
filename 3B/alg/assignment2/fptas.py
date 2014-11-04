@@ -14,8 +14,6 @@ def fptas(n, M, W, C):
 				m[i][j] = m[i-1][j]
 	# print int(m[int(n/K)][M] * K)
 
-	# print m[int(n/K)]
-
 for line in open('inst/knap_40.inst.dat', 'r'):
 	lineArr = line.rstrip().split(' ')
 	n = int(lineArr[1])

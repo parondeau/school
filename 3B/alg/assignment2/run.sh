@@ -1,12 +1,12 @@
 #!/bin/bash
-# for Y in {1..15}
-# do
-# 	START=$(gdate +%s%3N)
-# 	python bandb.py > bandb.txt
-# 	FINISH=$(gdate +%s%3N)
-# 	echo Time in ms to complete 50 instances:  $((FINISH - START))
-# 	# echo $((FINISH - START))
-# done
+for Y in {1..15}
+do
+	START=$(gdate +%s%3N)
+	python bandb.py
+	FINISH=$(gdate +%s%3N)
+	# echo Time in ms to complete 50 instances:  $((FINISH - START))
+	echo $((FINISH - START))
+done
 # echo
 # for Y in {1..15}
 # do
@@ -17,14 +17,14 @@
 # 	# echo $((FINISH - START))
 # done
 # echo
-for Y in {1..15}
-do
-	START=$(gdate +%s%3N)
-	python fptas.py
-	FINISH=$(gdate +%s%3N)
-	# echo Time in ms to complete 50 instances: $((FINISH - START))
-	echo $((FINISH - START))
-done
+# for Y in {1..15}
+# do
+# 	START=$(gdate +%s%3N)
+# 	python fptas.py
+# 	FINISH=$(gdate +%s%3N)
+# 	# echo Time in ms to complete 50 instances: $((FINISH - START))
+# 	echo $((FINISH - START))
+# done
 
 # echo diff bandb with dynamic
 # diff bandb.txt dynamic.txt
