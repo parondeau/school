@@ -1,7 +1,6 @@
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
 }
 body {
 	padding: 0px;
@@ -11,13 +10,15 @@ body {
 	font-weight: 100;
 	width: 750px;
 	height: 1334px;
+	background-color: #ddd;
+	color: black;
 }
 a:link {
-	color: inherit;
+	/*color: inherit;*/
 	text-decoration: inherit;
 }
 a:visited {
-	color: inherit;
+	/*color: inherit;*/
 }
 h1 {
 	display: block;
@@ -26,24 +27,189 @@ h1 {
 	font-size: 35px;
 
 }
-#statusBar {
-    width: 100%;
-    height: 40px;
-    background-color: #fff;
-    position:fixed;
-    z-index: 100;
-    top: 0;
+#map-canvas {
+	width: 100%;
+	height: 100%
 }
+.show {
+	display: block;
+	color: blue !important;
+}
+#statusBar {
+	width: 100%;
+	height: 40px;
+	position:fixed;
+	z-index: 100;
+	top: 0;
+	padding: 0 5px;
+	text-align: center;
+	font-size: 25px;
+}
+	#statusSignal {
+		float: left;
+	}
+	#statusSignal > * {
+		display: inline-block;
+		margin: 0 5px;
+	}
+	#statusBar > * {
+		line-height: 36px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	#statusSignalBars {
+		font-size: 15px;
+	}
+	#statusTime {
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	#statusBattery {
+		float: right;
+		background-image: url('iosBattery.png');
+		background-size: 66px 41px;
+		height: 100%;
+		width: 74px;
+		background-repeat: no-repeat;
+		background-position: 2px -2px;
+	}
+
 header {
 	height: 88px;
 	width: 100%;
 	position: fixed;
 	top: 40px;
 	left: 0;
-	background-color: #aaa;
 	text-align: center;
 	font-size: 67px;
 	line-height: 88px;
-	color: black;
 	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+}
+
+#tabBar {
+	height: 98px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	border-top: 1px solid #ccc;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+#tabBar li {
+	height: 100%;
+	width: 25%;
+	float: left;
+	color: black;
+	font-size: 25px;
+	padding: 10px 0;
+	cursor: pointer;
+}
+#tabBar li i {
+	font-size: 48px;
+	display: block;
+	color: #aaa;
+}
+
+main {
+	position: relative;
+	top: 128px;
+}
+	#content {
+		height: 1108px;
+		background-color: #fff;
+		font-size: 32px;
+	}
+	#content > * {
+		display: none;
+		height: 100%;
+		width: 100%;
+	}
+	#mainSearch {
+		display: block;
+		overflow: scroll;
+	}
+	#searchBar {
+		text-align: center;
+		background: #ccc;
+		padding: 16px;
+		height: 94px;
+	}
+	#searchBar input {
+		background: #fff;
+		height: 100%;
+		width: 98%;
+		margin: auto;
+		border-radius: 11px;
+		line-height: 60px;
+		text-align: center;
+		font-size: 32px;
+	}
+	#availableTrips {
+	}
+	.availableTripsList li {
+		padding: 25px 50px;
+		cursor: pointer;
+	}
+	.availableTripsList li:hover {
+		background-color: #aaa;
+	}
+	.tripDeparture {
+		display: inline-block;
+	}
+	.tripCost {
+		display: inline-block;
+		float: right;
+	}
+.driverName {
+	font-size: 46px;
+}
+#mainFav .tripDeparture {
+	diplay: block;
+}
+
+.listInput {
+	display: block;
+	font-size: 44px;
+	width: 98%;
+	margin: 40px 0;
+	text-align: center;
+	position: relative;
+	top: 60px;
+	border: none;
+}
+.submitButton {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	top: 113px;
+	border: 1px solid blue;
+	width: 250px;
+	padding: 24px;
+	font-size: 73px;
+	border-radius: 29px;
+}
+.submitButton:active {
+	background: blue;
+	color: white;
+}
+#mainList {
+	overflow: hidden;
+}
+.backButton {
+	float: left;
+	top: 16px;
+	position: relative;
+	left: 10px;
+	cursor: pointer;
+	display: none;
 }

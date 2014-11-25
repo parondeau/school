@@ -1,22 +1,166 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<head>
+		<meta charset='utf-8' />
+		<meta name='format-detection' content='telephone=no' />
+		<meta name='viewport' content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi' />
 
-        <link rel="stylesheet" type="text/css" href="main.css" />
 
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
-        <title>Swyft</title>
-    </head>
-    <body>
-        <section id="statusBar"></section>
-        <header>Swyft</header>
-        <main>
-            <section id="content"></section>
-            <section id="tabBar"></section>
-        </main>
-    </body>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCReRLRZaLnk1-rwg9ui1U-rjhzQUEQ7s4"></script>
+
+		<link rel='stylesheet' type='text/css' href='main.css' />
+		<script type="text/javascript" src="main.js"></script>
+
+		<title>Swyft</title>
+	</head>
+	<body>
+		<section id='statusBar'>
+			<div id='statusSignal'>
+				<div id='statusSignalBars'>
+					<i class='fa fa-circle'></i>
+					<i class='fa fa-circle'></i>
+					<i class='fa fa-circle'></i>
+					<i class='fa fa-circle-thin'></i>
+					<i class='fa fa-circle-thin'></i>
+				</div>
+				<span>O2 - CZ</span>
+				<i class='fa fa-wifi'></i>
+			</div>
+			<div id='statusTime'>12:16 PM</div>
+			<div id='statusBattery'></div>
+		</section>
+		<header><i class="fa fa-caret-left backButton"></i>Swyft</header>
+		<main>
+			<section id='content'>
+				<div id="booking">
+					<div class="driverName">Wayne Gretsky</div>
+					<div class="tripInfo">
+						<div>From: <b>Los Angeles</b></div>
+						<div>To <b>San Fransisco</b></div>
+						<div>Available Seats: 3</div>
+						<div>Departs: Thursday, November 27, 2014</div>
+						<div>Cost: $15</div>
+						<div>Phone: 226-555-1254</div>
+					</div>
+					<div class="submitButton">Book it!</div>
+				</div>
+				<div id='mainSearch'>
+					<div id='searchBar'>
+						<input placeholder='Where do you want to go?'></input>
+					</div>
+					<div id="availableTrips">
+						<ul class="availableTripsList">
+							<li>
+								<div class="tripPlaces">From <b>Washington</b> to <b>Denver</b></div>
+								<div class="tripDeparture">Departs in <b>2 hours</b></div>
+								<div class="tripCost">$15</div>
+							</li>
+							<li>
+								<div class="tripPlaces">From <b>Los Angeles</b> to <b>San Fransisco</b></div>
+								<div class="tripDeparture">Departs in <b>4 hours</b></div>
+								<div class="tripCost">$20</div>
+							</li>
+							<li>
+								<div class="tripPlaces">From <b>Washington</b> to <b>Toronto</b></div>
+								<div class="tripDeparture">Departs in <b>6 hours</b></div>
+								<div class="tripCost">$22</div>
+							</li>
+							<li>
+								<div class="tripPlaces">From <b>Toronto</b> to <b>Montreal</b></div>
+								<div class="tripDeparture">Departs in <b>8 hours</b></div>
+								<div class="tripCost">$11</div>
+							</li>
+							<li>
+								<div class="tripPlaces">From <b>Montreal</b> to <b>Quebec City</b></div>
+								<div class="tripDeparture">Departs in <b>11 hours</b></div>
+								<div class="tripCost">$15</div>
+							</li>
+							<li>
+								<div class="tripPlaces">From <b>Prague</b> to <b>Vienna</b></div>
+								<div class="tripDeparture">Departs in <b>12 hours</b></div>
+								<div class="tripCost">$10</div>
+							</li>
+							<li>
+								<div class="tripPlaces">From <b>Rome</b> to <b>Paris</b></div>
+								<div class="tripDeparture">Departs in <b>5 days</b></div>
+								<div class="tripCost">$50</div>
+							</li>
+							<li>
+								<div class="tripPlaces">From <b>Prague</b> to <b>Budapest</b></div>
+								<div class="tripDeparture">Departs in <b>8 days</b></div>
+								<div class="tripCost">$30</div>
+							</li>
+							<li>
+								<div class="tripPlaces">From <b>Madrid</b> to <b>Lisbon</b></div>
+								<div class="tripDeparture">Departs in <b>8 days</b></div>
+								<div class="tripCost">$25</div>
+							</li>
+							<li>
+								<div class="tripPlaces">From <b>New York</b> to <b>Toronto</b></div>
+								<div class="tripDeparture">Departs in <b>10 days</b></div>
+								<div class="tripCost">$40</div>
+							</li>
+							<li>
+								<div class="tripPlaces">From <b>London</b> to <b>Paris</b></div>
+								<div class="tripDeparture">Departs in <b>12 days</b></div>
+								<div class="tripCost">$28</div>
+							</li>
+							<li>
+								<div class="tripPlaces">From <b>Vancover</b> to <b>Miama</b></div>
+								<div class="tripDeparture">Departs in <b>14 days</b></div>
+								<div class="tripCost">$195</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id='mainHistory'>
+					<ul class="availableTripsList">
+						<li>
+							<div class="tripPlaces">From <b>Toronto</b> to <b>Chicago</b></div>
+							<div class="tripDeparture">Journey Completed <b>2 hours</b> Ago</div>
+							<div class="tripCost">$43</div>
+						</li>
+						<li>
+							<div class="tripPlaces">From <b>New York</b> to <b>Chicago</b></div>
+							<div class="tripDeparture">Journey Completed <b>4 days</b> Ago</div>
+							<div class="tripCost">$20</div>
+						</li>
+					</ul>
+				</div>
+				<div id='mainFav'>
+					<ul class="availableTripsList">
+						<li>
+							<div class="driverName">Bill Gates</div>
+							<div class="tripPlaces">From <b>Toronto</b> to <b>Chicago</b></div>
+							<div class="tripDeparture">Journey Completed <b>1 day</b> Ago</div>
+						</li>
+						<li>
+							<div class="driverName">Michael Jordan</div>
+							<div class="tripPlaces">From <b>Las Vegas</b> to <b>San Fransisco</b></div>
+							<div class="tripDeparture">Journey Completed <b>2 Weeks</b> Ago</div>
+						</li>
+					</ul>
+				</div>
+				<div id='mainList'>
+					<input class="listInput" placeholder='Where are you going?'></input>
+					<input class="listInput" placeholder='When are you going?'></input>
+					<input class="listInput" placeholder='How many people can you bring?'></input>
+					<input class="listInput" placeholder='How much per person?'></input>
+					<div class="submitButton">List it!</div>
+				</div>
+			</section>
+			<section id='tabBar'>
+				<ul>
+					<a href='#search' id='searchTab'><li class="show"><i class='fa fa-search show'></i>Search</li></a>
+					<a href='#history' id='historyTab'><li><i class='fa fa-clock-o'></i>History</li></a>
+					<a href='#favourites' id='favTab'><li><i class='fa fa-star-o'></i>Favourites</li></a>
+					<a href='#list' id='listTab'><li><i class="fa fa-list"></i>List it</li></a>
+				</ul>
+			</section>
+		</main>
+	</body>
 </html>
