@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+
+		<title>BIE-DBS Semestral Project</title>
+	</head>
+	<body>
+		<h1>The Great Canadian Database</h1>
+		<section>
+			<h3>Description:</h3>
+			<p>As many people know, <strong>Canadians</strong> are some of the most interesting people in the world. As such, it is the government of Canada's responsibility to record and track all of these people's special characteristics.</p>
+			<p>This database will store every citizen of Canada along with personal information related to them. Each <strong>Canadian</strong> will be identified with a unique id (<strong>primary key</strong>), have a string for their first and last name and an optional numeric value for their age as well as a required home id (<strong>foreign key</strong>).</p>
+			<p>Every <strong>Canadian</strong> must live in a house, and every house may house many <strong>Canadians</strong>. The house has the following attributes: a unique id (<strong>primary key</strong>), a string for the city name, a string for the street name, a numeric value for the street number, a string for the house type, a string value for the postal code and an optional apartment number field.</p>
+			<p>Each <strong>Canadian</strong> may have none or one or many pets where each pet has a unique id (<strong>primary key</strong>), an owner id (<strong>foreign key</strong>), a string for the species, a string for the name and an optional numeric value for the age.</p>
+			<p>Each <strong>Canadian</strong> may or may not have one vehicle where each vehicle has an owner id (<strong>primary and foreign key</strong>), a string for the vehicle type, a boolean value describing whether it is suitable for snow or not and an optional numeric value for the age.</p>
+			<p>There are also relationships amongst <strong>Canadians</strong>, these are represented through the use of two 1:N relationships, tied to the <strong>primary keys</strong> of <strong>Canadians</strong>. This relationship table contains, a numeric value for a unique key (<strong>primary key</strong>),  a string for the type of relationship, a numeric value for the first person id (<strong>foreign key</strong>), and a numeric value for the second person id (<strong>foreign key</strong>).</p>
+			<br>
+			<p>There are no loops in this data model.</p>
+			<p>However, there is a possibility of a chain and loop happening between the <strong>Canadian</strong> and Relationship tables due to the multiple 1:N relationships. Since many <strong>Canadians</strong> can be related, they can form a loop of relations amongst each other.</p>
+		</section>
+		<section>
+			<h3>Data Model:</h3>
+			<img id="dataModel" src="dataModel.png">
+		</section>
+		<section>
+			<h3>SQL Create Script:</h3>
+			<img src="sqlCreateScriptPic.jpeg">
+		</section>
+		<section>
+			<h3>Scripts:</h3>
+			<p>Source for ER modeler - <a href="something.xml">canadian.xml</a></p>
+			<p>SQL Create Script - <a href="createDB.sql">createDB.sql</a></p>
+		</section>
+	</body>
+</html>
