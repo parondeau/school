@@ -62,3 +62,4 @@ do
 	fi
 done
 kill $(<pid)
+rm pid
