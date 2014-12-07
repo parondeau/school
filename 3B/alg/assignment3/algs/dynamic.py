@@ -9,7 +9,7 @@ def dynamic(n, M, W, C):
 				m[i][j] = max(m[i-1][j], m[i-1][j-W[i-1]] + C[i-1])
 			else:
 				m[i][j] = m[i-1][j]
-	# print m[n][M]
+	print m[n][M]
 
 for line in open('inst/' + sys.argv[1], 'r'):
 	lineArr = line.rstrip().split(' ')
