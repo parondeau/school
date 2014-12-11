@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="project" id="CFE3709A-F0B4-373A-D24F-2CA798D210FA" version="3.5">
+<createdBy>parondeau</createdBy>
+<createdTime>2014-11-23 18:19:43 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CFE3709A-F0B4-373A-D24F-2CA798D210FA</designId>
+</OSDM_Design>
